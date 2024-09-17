@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Irmak Bukey</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,19 +19,42 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+<!-- 						<span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+						<h1>Irmak Bukey</h1>
+                        <p>Computer Science Ph.D. student @ CMU<br><span style="font-size:80%"><i class="fas fa-map-marker-alt"></i> Pittsburgh, PA</span></p>
+                        <style>
+                        .icon-container {
+                            text-align: center;
+                            margin-top: 0%;
+                        }
+                        .icon-container a {
+                            text-decoration: none;
+                            color: rgba(255, 255, 255, 0.65);
+                            font-size: 24px;
+                            margin: 0 15px;
+                            transition: color 0.3s;
+                        }
+                        .icon-container a:hover {
+                            color: rgb(197, 104, 212);
+                        }
+                    </style>
+                        <div class="icon-container">
+                        <a style="font-size:95%" href="https://scholar.google.com/citations?user=XYRO9LUAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
+                        <a style="font-size:95%" href="https://www.linkedin.com/in/irmakbukey/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#publications">Publications</a></li>
+							<li><a href="#other">Other</a></li>
 						</ul>
 					</nav>
 
@@ -43,105 +66,158 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>Hi, welcome!</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
+										<p>I am a second year Ph.D. student advised by Chris Donahue in the Computer Science Department at Carnegie Mellon University. My research lies at the intersection of machine learning and music, where I leverage tools from ML and music information retrieval (MIR) to work on musical tasks. My goal is to find ways to enhance how we engage and interact with music as well as inspire musical creativity.</p>
+<!-- 										<ul class="actions">
 											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
+										</ul> -->
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/irmak.png" alt="" /></span>
 								</div>
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="projects" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Projects</h2>
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                                        <img src="images/jltr.png" alt="Coming soon" style="width: 70%; height: 50%;" />
+										<h3>Coming soon!</h3>
+										<a href="#">ISMIR 2024 paper</a>                                        
+										<p>Audio-to-score alignment workflow...</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<img src="images/flex.png" alt="FlexDTW" style="width: 70%; height: 50%;" />
+										<h3>FlexDTW</h3>
+										<a href="https://archives.ismir.net/ismir2023/paper/000087.pdf">ISMIR 2023 paper</a>
+										<p>An alignment algorithm that is designed to handle a wide range of boundary conditions</p>
 									</li>
 									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<img src="images/audiocross.png" alt="AudioCrossVerification" style="width: 70%; height: 50%;" />
+										<h3>Audio Cross Verification</h3>
+										<a href="https://par.nsf.gov/servlets/purl/10439545">ICASSP 2023 paper</a>                                        
+										<p>A cross verification approach for audio to complement existing tampering detection methods</p>
 									</li>
+                                    <li id="moreContent" style="display: none;"> 
+                                        
+										<img src="images/sheetmusic.png" alt="GeneratingSheetMusicImages" style="width: 70%; height: 50%;" />
+										<h3>Sheet Music Generation</h3>
+										<a href="https://archives.ismir.net/ismir2022/paper/000084.pdf">ISMIR 2022 paper</a>                                        
+										<p>An exploration of generating sheet music images</p>
+                                    </li>
 								</ul>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><div id="moreProjects" class="button" onclick="showMore()">Show More</div></li>
+                                        <script>
+                                        function showMore() {
+
+                                            var moreContent = document.getElementById('moreContent');
+                                            var button = document.getElementById('moreProjects');
+
+                                            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                                                moreContent.style.display = 'block';
+                                                button.textContent = 'Show Less';
+                                            } else {
+                                                moreContent.style.display = 'none';
+                                                button.textContent = 'Show More';
+                                            }
+                                        }
+                                        </script>
 									</ul>
 								</footer>
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+							<section id="publications" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Publications</h2>
+                                    <style>
+                                    .year {
+                                        margin-top: 20px;
+                                        font-size: 24px;
+                                        color: #007bff;
+                                        text-align: left;
+                                    }
+                                    .publication-list {
+                                        margin-left: 20px;
+                                    }
+                                    .publication-item {
+                                        margin-bottom: 10px;
+                                        text-align: left;
+                                    }
+                                    .publication-item a {
+                                        text-decoration: none;
+                                        color: #007bff;
+                                    }
+                                    .publication-item a:hover {
+                                        text-decoration: underline;
+                                    }
+                                    </style>
+                                    <div class="year">
+                                        2024
+                                    </div>
+                                    <ul class="publication-list">
+                                        <li class="publication-item">
+                                            <a href="#" target="_blank">Coming soon!</a><br>
+                                        </li>
+                                    </ul>
+									<div class="year">
+                                        2023
+                                    </div>
+                                    <ul class="publication-list">
+                                        <li class="publication-item">
+                                            <a href="https://archives.ismir.net/ismir2023/paper/000087.pdf" target="_blank">FlexDTW: Dynamic Time Warping With Flexible Boundary Conditions</a><br>
+                                            <p3><b>Irmak Bukey</b>, Jason Zhang, TJ Tsai</p3><br>
+                                            <p3>Proceedings of the 24th International Society for Music Information Retrieval (ISMIR) Conference, 2023</p3>
+                                        </li>
+                                        <li class="publication-item">
+                                            <a href="https://par.nsf.gov/servlets/purl/10439545" target="_blank">Audio Cross Verification Using Dual Alignment Likelihood Ratio Test</a><br>
+                                            <p3>Heidi Lei, Arm Wonghirundacha, <b>Irmak Bukey</b>, TJ Tsai</p3><br>
+                                            <p3>Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2023</p3>
+                                        </li>
+                                    </ul>
+                                    <div class="year">
+                                        2022
+                                    </div>
+                                    <ul class="publication-list">
+                                        <li class="publication-item">
+                                            <a href="https://archives.ismir.net/ismir2022/paper/000084.pdf" target="_blank">An Exploration of Generating Sheet Music Images</a><br>
+                                            <p3>Marcos Acosta, <b>Irmak Bukey</b>, TJ Tsai</p3><br>
+                                            <p3>Proceedings of the 23th International Society for Music Information Retrieval (ISMIR) Conference, 2022</p3>
+                                        </li>
+                                    </ul>
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="other" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>More about me and music</h2>
+									<p2>I do really like the research I get to do, so it should go without saying that I'm very interested in music. I play some guitar and some keyboard. I tried my hand at the mandolin too at some point. I'm not partically good at any of my instruments, but I thoroughly enjoy spending time with them. I also like listening to music, dancing to it, having it play in the background... <br> I feel that music is significant in so many different ways from cultural expression to emotional understanding and exploration. But my favorite thing about it is its ability to enable self-expression. I know that a lot of people feel the same way. It is because of this that at the core of my research is the goal of helping people engage with music in meaningful ways. I'm still very much in the beginning, but it appears to be an exciting journey.</p2>
 								</header>
-								<footer class="major">
+<!-- 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button primary">Get Started</a></li>
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
-								</footer>
+								</footer> -->
 							</section>
 
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
+					<footer id="major">
+                        <center>
+                        <div style="margin-top:3%">
+                        <h1><span class="icon solid fa-solid fa-music"></span></h1>
+                            <p style="margin-top:-1%">© Irmak Bukey | Design: <a href="https://html5up.net/">HTML5 UP</a></p>
+                            </div>
+                        </center>
+<!-- 						<section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
 							<ul class="actions">
@@ -166,7 +242,7 @@
 								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
 					</footer>
 
 			</div>
