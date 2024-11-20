@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="background: linear-gradient(45deg, #783e9b, #4440a2, #460e66), url('images/cartographer.png'); background-blend-mode: overlay;">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -37,9 +37,6 @@
                             margin: 0 15px;
                             transition: color 0.3s;
                         }
-                        .icon-container a:hover {
-                            color: rgb(197, 104, 212);
-                        }
                     </style>
                         <div class="icon-container">
                         <a style="font-size:95%" href="https://scholar.google.com/citations?user=XYRO9LUAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
@@ -47,6 +44,9 @@
                         </a>
                         <a style="font-size:95%" href="https://www.linkedin.com/in/irmakbukey/" target="_blank" title="LinkedIn">
                             <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a style="font-size:95%" href="mailto:ibukey&#64;andrew.cmu&#46;edu" target="_blank" title="Email">
+                            <i class="fa fa-envelope"></i> Email
                         </a>
                     </div>
 					</header>
@@ -57,7 +57,7 @@
 							<li><a href="#intro" class="active">Introduction</a></li>
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#publications">Publications</a></li>
-							<li><a href="#other">Other</a></li>
+							<li><a href="#meandmusic">Me &#38; Music</a></li>
 						</ul>
 					</nav>
 
@@ -86,29 +86,44 @@
 									<h2>Projects</h2>
 								</header>
 								<ul class="features">
+                                    <!-- Just Label the Repeats -->
 									<li>
-                                        <img src="images/jltr.png" alt="Coming soon" style="width: 70%; height: 50%;" />
-										<h3>Coming soon!</h3>
-										<a href="#">ISMIR 2024 paper</a>                                        
-										<p>Audio-to-score alignment workflow...</p>
+                                        <img src="images/jltr.png" alt="JustLabeltheRepeats" style="width: 70%; height: 50%;" />
+										<h3>Just Label the Repeats</h3>
+										<a href="https://www.arxiv.org/abs/2411.07428" style="color: #007bff;">ISMIR 2024 paper</a><br>                                 
+                                        <a href="https://youtu.be/GDg7o5W4dG4" style="color: #007bff;">presentation</a><br>           
+                                        <a href="https://github.com/irmakbky/jltr-alignment" style="color: #007bff;">code</a>           
+										<p>A human-in-the-loop workflow that can produce fine-grained alignments between in-the-wild scores and audio.</p>
 									</li>
+                                    
+                                    <!-- FlexDTW -->
 									<li>
 										<img src="images/flex.png" alt="FlexDTW" style="width: 70%; height: 50%;" />
 										<h3>FlexDTW</h3>
-										<a href="https://archives.ismir.net/ismir2023/paper/000087.pdf">ISMIR 2023 paper</a>
+										<a href="https://archives.ismir.net/ismir2023/paper/000087.pdf" style="color: #007bff;">ISMIR 2023 paper</a><br>
+                                        <a href="https://youtu.be/m_XTsG65cPA?si=dcKZnqvRy7T3O5bq" style="color: #007bff;">presentation</a><br>
+                                        <a href="https://github.com/HMC-MIR/FlexDTW" style="color: #007bff;">code</a>           
 										<p>An alignment algorithm designed to handle a wide range of boundary conditions</p>
 									</li>
+                                    
+                                    <!-- Audio Cross Verification -->
 									<li>
 										<img src="images/audiocross.png" alt="AudioCrossVerification" style="width: 70%; height: 50%;" />
 										<h3>Audio Cross Verification</h3>
-										<a href="https://par.nsf.gov/servlets/purl/10439545">ICASSP 2023 paper</a>                                        
+										<a href="https://par.nsf.gov/servlets/purl/10439545" style="color: #007bff;">ICASSP 2023 paper</a><br>                                        
+                                        <a href="https://youtu.be/7iUTECRuX_4?si=xVLVcInG3ZYdNykP" style="color: #007bff;">presentation</a><br>           
+                                        <a href="https://github.com/HMC-MIR/AudioCrossVerification" style="color: #007bff;">code</a>     
 										<p>A cross verification approach for audio to complement existing tampering detection methods</p>
 									</li>
+                                    
+                                    <!-- Sheet Music Image Generation -->
                                     <li id="moreContent" style="display: none;"> 
                                         
 										<img src="images/sheetmusic.png" alt="GeneratingSheetMusicImages" style="width: 70%; height: 50%;" />
-										<h3>Sheet Music Generation</h3>
-										<a href="https://archives.ismir.net/ismir2022/paper/000084.pdf">ISMIR 2022 paper</a>                                        
+										<h3>Sheet Music Image Generation</h3>
+										<a href="https://archives.ismir.net/ismir2022/paper/000084.pdf" style="color: #007bff;">ISMIR 2022 paper</a><br>     
+                                        <a href="https://youtu.be/O7uzzryQ6bE?si=-xA0EaGg9clLh1HW" style="color: #007bff;">presentation</a><br>           
+                                        <a href="https://github.com/HMC-MIR/GeneratingSheetMusic" style="color: #007bff;">code</a>           
 										<p>An exploration of generating sheet music images</p>
                                     </li>
 								</ul>
@@ -165,7 +180,9 @@
                                     </div>
                                     <ul class="publication-list">
                                         <li class="publication-item">
-                                            <a href="#" target="_blank">Coming soon!</a><br>
+                                            <a href="https://www.arxiv.org/abs/2411.07428" target="_blank">Just Label the Repeats for In-The-Wild Audio-to-Score Alignment</a><br>
+                                            <p3><b>Irmak Bukey</b>, Michael Feffer, Chris Donahue</p3><br>
+                                            <p3>Proceedings of the 25th International Society for Music Information Retrieval (ISMIR) Conference, 2024</p3>
                                         </li>
                                     </ul>
 									<div class="year">
@@ -197,7 +214,7 @@
 							</section>
 
 						<!-- Get Started -->
-							<section id="other" class="main special">
+							<section id="meandmusic" class="main special">
 								<header class="major">
 									<h2>More about me and music</h2>
 									<p2>I do really like the research I get to do, so it should go without saying that I'm very interested in music. I play some guitar and some keyboard. I tried my hand at the mandolin too at some point. I'm not partically good at any of my instruments, but I thoroughly enjoy spending time with them. I also like listening to music, dancing to it, having it play in the background... <br> I feel that music is significant in so many different ways from cultural expression to emotional understanding and exploration. But my favorite thing about it is its ability to enable self-expression. I know that a lot of people feel the same way. It is because of this that at the core of my research is the goal of helping people engage with music in meaningful ways. I'm still very much in the beginning, but it appears to be an exciting journey.</p2>
